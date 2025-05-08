@@ -22,14 +22,15 @@ export default function Home() {
       </section>
       <section className="w-full max-w-5xl grid md:grid-cols-3 gap-8 mt-4">
         <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center hover:shadow-xl transition group">
-          <h3 className="text-xl font-semibold mb-2 text-blue-700 group-hover:text-blue-900 transition">Collaboration Rooms</h3>
+          <Image src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&w=400&q=80" width={80} height={80} alt="Collaboration Rooms" className="rounded-lg mb-3"/>
+					<h3 className="text-xl font-semibold mb-2 text-blue-700 group-hover:text-blue-900 transition">Collaboration Rooms</h3>
           <p className="text-slate-600 text-sm mb-4">Work together with classmates or colleagues in real-time rooms—chat, edit, and share ideas live.</p>
           <Link href="/dashboard/collaboration" className="text-sm font-medium text-blue-600 hover:underline">
             Enter Rooms &rarr;
           </Link>
         </div>
         <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center hover:shadow-xl transition group">
-          
+          <Image src="https://images.pexels.com/photos/4145199/pexels-photo-4145199.jpeg?auto=compress&w=400&q=80" width={80} height={80} alt="Assignment Manager" className="rounded-lg mb-3"/>
           <h3 className="text-xl font-semibold mb-2 text-pink-700 group-hover:text-pink-900 transition">Assignment Manager</h3>
           <p className="text-slate-600 text-sm mb-4">Educators can create, assign, and track classroom tasks. Students get a clear view of what's due.</p>
           <Link href="/dashboard/assignments" className="text-sm font-medium text-pink-600 hover:underline">
@@ -37,7 +38,7 @@ export default function Home() {
           </Link>
         </div>
         <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center hover:shadow-xl transition group">
-          
+          <Image src="https://images.pexels.com/photos/4145190/pexels-photo-4145190.jpeg?auto=compress&w=400&q=80" width={80} height={80} alt="Project Templates" className="rounded-lg mb-3"/>
           <h3 className="text-xl font-semibold mb-2 text-emerald-700 group-hover:text-emerald-900 transition">Project Templates</h3>
           <p className="text-slate-600 text-sm mb-4">Start fast with customizable templates for common projects, lessons, and study plans.</p>
           <Link href="/dashboard/templates" className="text-sm font-medium text-emerald-600 hover:underline">
@@ -56,7 +57,9 @@ export default function Home() {
             <Link href="/(auth-pages)/sign-in?role=student" className="px-5 py-2 rounded-lg bg-pink-600 text-white font-medium hover:bg-pink-700 transition">I'm a Student</Link>
           </div>
         </div>
-        
+        <div className="flex-shrink-0">
+          <Image src="https://images.pexels.com/photos/3849167/pexels-photo-3849167.jpeg?auto=compress&cs=tinysrgb&w=600" width={120} height={120} alt="Onboarding" className="rounded-xl shadow"/>
+        </div>
       </section>
     </main>
   );
